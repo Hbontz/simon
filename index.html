@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Simon</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+      <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="centerCircle">
+        <div class="gameControl">
+          <div class="title">Simon</div>
+          <div class="btnRow">
+            <span class="toggleBtn modeBtn" id="strict">Strict:  ON</span>
+            <span class="toggleBtn startBtn" id="startReset">START</span>
+          </div>
+          <div class="levelBox" id="levelNum">level</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="tiles" id="green"></div>  
+        <div class="tiles" id="red"></div>
+      </div>
+      <div class="row">
+        <div class="tiles" id="yellow"></div>
+        <div class="tiles" id="blue"></div>
+      </div>
+    </div>
+    <audio id="greenSound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload="auto"></audio>
+    <audio id="redSound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload="auto"></audio>
+    <audio id="yellowSound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload="auto"></audio>
+    <audio id="blueSound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload="auto"></audio>
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
